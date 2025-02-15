@@ -101,3 +101,11 @@ Expires: Sat, 15 Feb 2025 10:13:52 GMT
 Source-Age: 0
 
 ]
+[2025-02-15 19:57:41,621]: [INFO]: [datasciencelogger]: [<module>]: [7]: [initiating pipeline for data_ingestion_STAGE]
+[2025-02-15 19:57:41,633]: [INFO]: [datasciencelogger]: [read_yaml]: [30]: [yaml file: config\config.yaml loaded successfully]
+[2025-02-15 19:57:41,637]: [INFO]: [datasciencelogger]: [read_yaml]: [30]: [yaml file: params.yaml loaded successfully]
+[2025-02-15 19:57:41,641]: [INFO]: [datasciencelogger]: [read_yaml]: [30]: [yaml file: schema.yaml loaded successfully]
+[2025-02-15 19:57:41,643]: [INFO]: [datasciencelogger]: [create_directories]: [50]: [created directory at: artifacts]
+[2025-02-15 19:57:41,646]: [INFO]: [datasciencelogger]: [create_directories]: [50]: [created directory at: artifacts/data_ingestion]
+[2025-02-15 19:57:41,647]: [INFO]: [datasciencelogger]: [download_file]: [21]: [File already exists]
+[2025-02-15 19:57:41,711]: [INFO]: [datasciencelogger]: [<module>]: [10]: [pipeline for data_ingestion_STAGE completed]
