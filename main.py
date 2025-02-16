@@ -3,6 +3,7 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.model_trainer_pipeline import ModelTrainerPipeline
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
 
 
 
@@ -46,6 +47,16 @@ try:
     logger.info(f"initiating pipeline for {STAGE_NAME}")
     model_training = ModelTrainerPipeline()
     model_training.initiate_model_training()
+    logger.info(f"pipeline for {STAGE_NAME} completed")
+except Exception as e:
+    logger.error(f"pipeline for {STAGE_NAME} failed with error: {e}")
+    raise e
+
+STAGE_NAME = "model_evaluation_STAGE"
+try:
+    logger.info(f"initiating pipeline for {STAGE_NAME}")
+    model_evaluation = ModelEvaluationPipeline()
+    model_evaluation.initiate_model_evaluation()
     logger.info(f"pipeline for {STAGE_NAME} completed")
 except Exception as e:
     logger.error(f"pipeline for {STAGE_NAME} failed with error: {e}")
