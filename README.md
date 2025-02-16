@@ -5,9 +5,10 @@
 
 ### workflows-- ML PIPELINE
 1. data ingestion
-2. data transformation
-3. model trainer
-4. model evaluation
+2. data validation
+3. data transformation
+4. model trainer
+5. model evaluation
 
 
 ## workflows
